@@ -31,7 +31,7 @@ body {
 .left h2,
 .right h2 {
   padding: 20px;
-  color: #013889;
+  color: #098013;
   font-size: 30px;
 }
 
@@ -44,21 +44,21 @@ body {
 button {
   padding: 14px 20px;
   border: none;
-  background: #013889;
+  background: #098013;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
   min-width: 160px;
   margin: 16px;
-  border: 2px solid #013889;
+  border: 2px solid #098013;
 
 }
 
 button:hover {
   background: #fff;
-  color: #013889;
-  border: 2px solid #013889;
+  color: #098013;
+  border: 2px solid #098013;
   border-radius: 0;
   transform: scale(1.1);
 }
@@ -81,7 +81,7 @@ button:hover {
 .box {
   width: 200px;
   height: 200px;
-  background-color: #013889;
+  background-color: #098013;
   margin: 0 auto;
   border-radius: 0;
   transition: all 0.5s ease;
