@@ -1,5 +1,7 @@
 const figura = document.getElementById('figure');
 
+// estilos
+
     function circulo () {
         figura.style.borderRadius = '50%';
         figura.style.backgroundColor = "red"
@@ -34,6 +36,30 @@ const figura = document.getElementById('figure');
         figura.style.transform = "translateX(100px)";
     }
 
+// contenidos
+
+    function titulo () {
+
+        const title = document.getElementById("mainTitle");
+            title.textContent = prompt("Escribe El Nuevo Título:");
+    }
+
+    function parrafo () {
+        const parrafo = document.getElementById("mainParagraph");
+            parrafo.textContent = prompt("Cambia el parrafo por el que desees");
+    }
+    
+    function addParrafo () {
+        const addParrafo = document.getElementById("extraParagraphs");
+            addParrafo.innerHTML = "<p id='parrafoNew'></p>";  //agregue la etiqueta p pero dentro de ella agregue un ID para poder agregar el nuevo texto
+            let parrafoNew = document.getElementById('parrafoNew'); //hice que el parrafo se capturara en una variable(Let) para  agregarla en la nueva etiqueta P
+                parrafoNew.textContent = prompt("Agrega el nuevo texto");
+    }
+
+    function deleteParrafo () {
+        const deleteParrafo = document.querySelector("#parrafoNew");
+            deleteParrafo.remove();
+    }
 
 
 
@@ -46,4 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("btnMoveDown").addEventListener("click", moveDown);
     document.getElementById("btnMoveLeft").addEventListener("click", moveLeft);
     document.getElementById("btnMoveRight").addEventListener("click", moveRight);
+    document.getElementById("btnChangeTitle").addEventListener("click", titulo);
+    document.getElementById("btnChangeParagraph").addEventListener("click", parrafo);
+    document.getElementById("btnAddParagraph").addEventListener("click", addParrafo);
+    document.getElementById("btnRemoveParagraph").addEventListener("click", deleteParrafo);
 });
